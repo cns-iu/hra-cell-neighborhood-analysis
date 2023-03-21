@@ -61,6 +61,7 @@ def main():
     cluster_col = 'Cell Type'
     keep_cols = [X,Y,reg,cluster_col]
     save_path = '/Users/abhiroop/Developer/cns/hra-cell-neighborhood-analysis/viz/'
+    save_path_low = '/Users/abhiroop/Developer/cns/hra-cell-neighborhood-analysis/viz_low_res/'
 
     # Import Data
     n_neighbors = max(ks)
@@ -125,7 +126,8 @@ def main():
 
     col_list = list(sum_cols)
     hm = cells.groupby(['neighborhood10'])[col_list].mean()
-    sns.clustermap(hm, cmap='viridis', standard_scale=0)
+    s2 = sns.clustermap(hm, cmap='viridis', standard_scale=0)
+    s2.savefig(save_path+"/heatmap.png", dpi=600)
 
     n_conversion_30 = {
         0: 'Secretory Epithelial',
@@ -247,13 +249,12 @@ def main():
 
     # modify figure size aesthetics for each neighborhood
     plt.rcParams["legend.markerscale"] = 24
-    figs_n, names = catplot(cells, X='Xcorr', Y='Ycorr', exp='array',
+    figs_n, names = catplot(cells, X='x', Y='y', exp='unique_region',
                             hue='Neighborhood', invert_y=True, size=1, figsize=8, palette=dict_neigh2)
 
     for fig, name in zip(figs_n, names):
         fig.savefig(save_path + f'/{name}.png', dpi=200)
-
-
+        fig.savefig(save_path_low + f'/{name}.png', dpi=40)
 
 
 if __name__ == "__main__":
