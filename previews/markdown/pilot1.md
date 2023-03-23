@@ -1,18 +1,18 @@
-#  Preview: Vasculature CCF Visualization for Intestine Data
+#  Preview: Cell Neighborhood Visualization for Intestine Data
 
 HuBMAP Atlas Previews demonstrate functionality and resources that will become available in future HuBMAP portal releases. Previews may rely on externally hosted data or analysis results that were generated with processing pipelines that are not yet integrated into the HuBMAP data infrastructure.
 
 
 ### Description
 
-This preview showcases a novel visualization in support of a vasculature-based common coordinate system (VCCF), see paper on “[Considerations for Using the Vasculature as a Coordinate System to Map All the Cells in the Human Body](https://doi.org/10.3389/fcvm.2020.00029)”.
+This preview showcases visualizations of Hierarchical Cell Neighborhoods.
 
 Experimental data from the “[High Resolution Single Cell Maps Reveals Distinct Cell Organization and Function Across Different Regions of the Human Intestine](https://www.biorxiv.org/content/early/2021/11/25/2021.11.25.469203)” paper, is used to compute distances of different cell types to the nearest blood vessel using 2D volumes of digital intestine biopsy data generated using multiplexed imaging on 64 sections of the human intestine (~16 mm2) from 8 donors (B004, B005, B006, B008, B009, B010, B011, and B012) using a panel of 57 oligonucleotide-barcoded antibodies. Subsequently, images underwent standard CODEX image processing (tile stitching, drift compensation, cycle concatenation, background subtraction, deconvolution, and determination of best focal plane), single cell segmentation, and column marker z-normalization by tissue. The outputs of this process were data frames of 2.6 million cells with 57 antibody fluorescence values quantified from each marker. Each cell has its cell type, cellular neighborhood, community of neighborhooods, and tissue unit defined with x, y coordinates representing pixel location in the original image. This data was taken from  8 donors with 8 individual tissue Regions (64 tissues imaged) across 2.6 million cells, with 25 cell types, 20 multicellular neighborhoods, 10 communities of neighborhoods, and 3 tissue segments could be used to understand the cellular interactions, composition, and structure of the human intestine from the duodenum to the sigmoid colon and understand differences between different areas of the intestine. 
 
 
 ### Atlas Details
 
-This Preview showcases a 2D interactive visualization of distances from cell nuclei of different cell types(NK, M1 Macrophage, CD8+ T, DC, M2 Macrophage, B, Neutrophil, Plasma, CD4+ T cell, CD7+ Immune) to vasculature across donor groups.  
+This Preview showcases a 2D visualization of hierarchical cell neighborhoods different cell types(NK, M1 Macrophage, CD8+ T, DC, M2 Macrophage, B, Neutrophil, Plasma, CD4+ T cell, CD7+ Immune) to vasculature across donor groups.  
 
 
 ### Experimental Data Details
@@ -22,7 +22,7 @@ The experimental intestine data used here is detailed in the “[High Resolution
 ### Contributors
 **Intestine Data:** John Hickey et al.
 
-**Vasculature CCF Visualization:** Himani Shah, Yingnan Ju & Katy Börner
+**Cell Neighborhood Visualization:** John Hickey, Abhiroop Tejomay, & Katy Börner
 
 
 ### Attribution
