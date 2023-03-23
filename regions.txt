@@ -1,0 +1,64 @@
+region_1, B004_Ascending.png
+region_2, B004_Descending - Sigmoid.png
+region_3, B004_Descending.png
+region_4, B004_Duodenum.png
+region_5, B004_Ileum.png
+region_6, B004_Mid-jejunum.png
+region_7, B004_Proximal Jejunum.png
+region_8, B004_Transverse.png
+region_9, B005_Ascending.png
+region_10, B005_Descending - Sigmoid.png
+region_11, B005_Descending.png
+region_12, B005_Duodenum.png
+region_13, B005_Ileum.png
+region_14, B005_Mid-jejunum.png
+region_15, B005_Proximal Jejunum.png
+region_16, B005_Transverse.png
+region_17, B006_Ascending.png
+region_18, B006_Descending - Sigmoid.png
+region_19, B006_Descending.png
+region_20, B006_Duodenum.png
+region_21, B006_Ileum.png
+region_22, B006_Mid-jejunum.png
+region_23, B006_Proximal Jejunum.png
+region_24, B006_Transverse.png
+region_25, B008_Duodenum.png
+region_26, B008_Ileum.png
+region_27, B008_Left.png
+region_28, B008_Mid jejunum.png
+region_29, B008_Proximal jejunum.png
+region_30, B008_Right.png
+region_31, B008_Sigmoid.png
+region_32, B008_Trans.png
+region_33, B009_Duodenum.png
+region_34, B009_Ileum.png
+region_35, B009_Left.png
+region_36, B009_Mid jejunum.png
+region_37, B009_Proximal jejunum.png
+region_38, B009_Right.png
+region_39, B009_Sigmoid.png
+region_40, B009_Trans.png
+region_41, B010_Duodenum.png
+region_42, B010_Ileum.png
+region_43, B010_Left.png
+region_44, B010_Mid jejunum.png
+region_45, B010_Proximal jejunum.png
+region_46, B010_Right.png
+region_47, B010_Sigmoid.png
+region_48, B010_Trans.png
+region_49, B011_Duodenum.png
+region_50, B011_Ileum.png
+region_51, B011_Left.png
+region_52, B011_Mid jejunum.png
+region_53, B011_Proximal jejunum.png
+region_54, B011_Right.png
+region_55, B011_Sigmoid.png
+region_56, B011_Trans.png
+region_57, B012_Duodenum.png
+region_58, B012_Ileum.png
+region_59, B012_Left.png
+region_60, B012_Mid jejunum.png
+region_61, B012_Proximal jejunum.png
+region_62, B012_Right.png
+region_63, B012_Sigmoid.png
+region_64, B012_Trans.png
