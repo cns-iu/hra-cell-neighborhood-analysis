@@ -70,8 +70,20 @@ def main():
     # read the csv file
     nuclei_df = pd.read_csv(nuclei_file_path)
 
+    # build a list of columns:
+    # Cell Type em, Cell subtype,
+    # Neighborhood, Neigh_sub, Neighborhood_Ind, NeighInd_sub,
+    # Community, Major Community,
+    # Tissue Segment
+    columns = ["Cell Type em", "Cell subtype",
+               "Neighborhood", "Neigh_sub", "Neighborhood_Ind", "NeighInd_sub",
+               "Community", "Major Community",
+               "Tissue Segment"]
+    columns.append("x")
+    columns.append("y")
+
     # construct the 'cell' table and generate vertices
-    cell_table = nuclei_df[["Neighborhood", "Neigh_sub", "x", "y"]].copy()
+    cell_table = nuclei_df[columns].copy()
     cell_table["vertices"] = cell_table.apply(
         lambda row: generate_cell_vertices(row["x"], row["y"], universal_size), axis=1)
 
